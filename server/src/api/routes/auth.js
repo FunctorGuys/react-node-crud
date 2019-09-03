@@ -6,7 +6,7 @@ const routes = (app) => {
   app.use('/auth', route);
 
   route.get('/login', (req, res) => {
-    res.status(200).end('Login page');
+    res.render('pages/login');
   });
 }
 

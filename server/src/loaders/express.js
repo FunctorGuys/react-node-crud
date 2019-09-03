@@ -1,3 +1,5 @@
+import path from 'path';
+import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -8,6 +10,13 @@ const loader = (app) => {
   app.get('/ping', (req, res) => {
     res.status(200).end('pong');
   });
+
+  // Use ejs for views
+  app.set('view engine', 'ejs');
+  app.set('views', path.join(__dirname, '..', '/views'));
+
+  // Static files
+  app.use(express.static(path.join(__dirname, '..', '/views/assets')));
 
   // Useful if you're behind a reverse proxy (Heroku, Bluemix, AWS ELB, Nginx, etc)
   // It shows the real origin IP in the heroku or Cloudwatch logs
