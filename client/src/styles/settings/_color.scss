@@ -1,0 +1,28 @@
+$light-primary: #22ADFF;
+$gray: #494949;
+$dark-gray: #3d3d3d;
+$light-gray: #494949;
+$white-gray: #F3F3F3;
+
+/**
+ * Color Paletters Modiers
+ *
+ * How to use: map-get(map-get($paletter, grey), xx-light);
+ * Example: palette(grey, light);
+ */
+$paletters: (
+	gray: (
+		xxx-light: lighten($gray, 35%),
+		xx-light: lighten($gray, 15%),
+		x-light: lighten($gray, 8%),
+		light: lighten($gray, 4%),
+		base: $gray,
+		dark: darken($gray, 4%),
+		x-dark: darken($gray, 8%),
+		xx-dark: darken($gray, 15%),
+	)
+);
+
+// Main color
+$color-primary: $gray;
+$color-secondary: $gray;

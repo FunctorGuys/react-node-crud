@@ -1,0 +1,43 @@
+// FontAwesome
+// @import "../libs/fontawesome/web-fonts-with-css/scss/fontawesome";
+
+
+//Settings
+@import "./settings/index";
+
+
+// Tools
+@import "./tools/index";
+
+
+//Generics
+@import "./generics/index";
+
+
+// Elements
+@import "./elements/index";
+
+
+// Objects
+@import "./objects/index";
+
+
+// Components
+@import "./layouts/index";
+@import "./components/index";
+
+
+// Pages
+@import "./pages/index";
+@import "./modals/index";
+
+
+// Trumps
+@import "./trumps/index";
+
+
+// State
+@import "./state/index";
+
+// Overrides
+@import "./overrides/index";

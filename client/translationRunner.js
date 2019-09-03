@@ -1,0 +1,10 @@
+/* eslint-disable no-undef */
+const path = require('path')
+const manageTranslations = require('react-intl-translations-manager').default
+
+manageTranslations({
+  messagesDirectory: path.join(__dirname, 'src/i18n/messages'),
+  translationsDirectory: path.join(__dirname, 'src/i18n/locales/'),
+  singleMessagesFile: true,
+  languages: ['en', 'vi']
+})

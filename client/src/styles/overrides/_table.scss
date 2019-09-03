@@ -1,0 +1,13 @@
+.table-hide-expand {
+  .ant-table-expand-icon-col,
+  .ant-table-expand-icon-th,
+  .ant-table-row-expand-icon-cell {
+    display: none;
+  }
+
+  .ant-table-expanded-row {
+    > td:first-child {
+      display: none;
+    }
+  }
+}

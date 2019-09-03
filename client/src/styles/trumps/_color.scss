@@ -1,0 +1,17 @@
+@each $base, $item in $paletters {
+  @each $shade, $color in $item {
+    @if ($shade == 'base') {
+      .u-hightlight-#{$base} { background-color: $color !important; }
+      .u-color-#{$base} { color: $color; }
+    } @else {
+      .u-hightlight-#{$shade}-#{$base} { background-color: $color !important; }
+      .u-color-#{$shade}-#{$base} { background-color: $color !important; }
+    }
+  }
+}
+
+.u-transparent {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
