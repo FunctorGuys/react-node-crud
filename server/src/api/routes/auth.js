@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { authService, postsService } from '@/services';
 
 const routes = (app) => {
   const route = Router();

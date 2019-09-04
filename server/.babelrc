@@ -9,6 +9,9 @@
         "@/config": "./src/config",
         "@/api": "./src/api",
         "@/views": "./src/views",
+        "@/models": "./src/models",
+        "@/services": "./src/services",
+        "@/loaders": "./src/loaders",
       }
     }]
   ]
